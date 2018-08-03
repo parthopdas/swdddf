@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net461</TargetFramework>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <None Include="README.md" />
+    <None Include="Common.fsx" />
+    <None Include="Ch04_Types.fsx" />
+    <None Include="Ch05_DomainModeling.fsx" />
+    <None Include="Ch06_DomainIntegrity.fsx" />
+    <None Include="Ch07_ModelingWorkflow.fsx" />
+    <None Include="Ch08_Functions.fsx" />
+    <None Include="Ch09_Pipeline.fsx" />
+    <None Include="Ch10_Errors.fsx" />
+    <None Include="Ch11_Serialization.fsx" />
+    <None Include="Ch12_Persistence.fsx" />
+    <None Include="Ch13_Evolution.fsx" />
+    <None Include="paket.references" />
+  </ItemGroup>
+  <ItemGroup Condition=" '$(TargetFramework)' != 'netstandard1.6' ">
+    <Reference Include="System.Runtime" />
+  </ItemGroup>  
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>
